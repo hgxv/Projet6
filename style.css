@@ -1,0 +1,49 @@
+html {
+    background-color: black;
+    color: white;
+    margin: 1rem;
+}
+
+/* GLOBAL */
+a {
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+    margin-bottom: 10rem;
+    list-style: none;
+    font-size: large;
+}
+.navbar > li {
+    padding: 2rem;
+}
+.logo {
+    float: left;
+}
+.navbar > .right {
+    float: right;
+}
+.navbar > li:hover {
+    background-color: #3b1204;
+}
+
+
+/* Carrousel 1 */
+.carrousel {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide {
+    color: orange;
+    margin-right: 5rem;
+}
+.slide:hover {
+    cursor: pointer;
+}
