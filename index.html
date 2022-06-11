@@ -8,6 +8,23 @@
 
     <body>
         <div class="container">
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="title"></p>
+                    <p><img id="modalImg"/></p>
+                    <p id="genre"></p>
+                    <p id="year"></p>
+                    <p id="rated"></p>
+                    <p id="imdbScore"></p>
+                    <p id="directors"></p>
+                    <p id="actors"></p>
+                    <p id="duration"></p>
+                    <p id="origin"></p>
+                    <p id="boxoffice"></p>
+                    <p id="synopsis"></p>
+                </div>
+            </div>
             <div class="nav">
                 <ul class="navbar">
                     <li class="logo"><a>Logo</a></li>
@@ -15,12 +32,16 @@
                     <li class="right"><a>Catégories</a></li>
                 </ul>
             </div>
+            <h2>Meilleur film de tous les temps :</h2>
+            <div id="bestFilm" class="bestFilm"></div>
 
-            <h1>Mieux notés de tous les temps</h1>
-            <div class="carrousel carrousel_1"></div>
-            
+            <h2>Les autres meilleurs films :</h2>
+            <div class="carrousel carrousel_1">
+            </div>            
         </div>
+        
         
     </body>
     <script src="script.js"></script>
+    <script src="modal.js"></script>
 </html>

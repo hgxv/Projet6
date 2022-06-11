@@ -12,6 +12,9 @@ a {
     display: flex;
     flex-direction: column;
 }
+h2 {
+    text-align: center;
+}
 
 /* NAVBAR */
 .navbar {
@@ -32,10 +35,15 @@ a {
     background-color: #3b1204;
 }
 
+/* Meilleur film */
+.bestFilm {
+    text-align: center;
+    margin: 3rem;
+}
 
 /* Carrousel 1 */
 .carrousel {
-    margin-top: 2rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,7 +51,47 @@ a {
 .slide {
     color: orange;
     margin-right: 5rem;
+    border: solid gray;
 }
 .slide:hover {
     cursor: pointer;
+}
+
+/* Modal */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: whitesmoke;
+    margin: 8rem;
+    color: black;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: center;
+}
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#title {
+    font-weight: bold;
+    font-size: 28px;
 }
