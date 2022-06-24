@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css" />
-        <title>Just Stream It</title>
-    </head>
 
-    <body>
-        <div class="container">
-            <div id="modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p id="title"></p>
-                    <p><img id="modalImg"/></p>
-                    <p id="genre"></p>
-                    <p id="year"></p>
-                    <p id="rated"></p>
-                    <p id="imdbScore"></p>
-                    <p id="directors"></p>
-                    <p id="actors"></p>
-                    <p id="duration"></p>
-                    <p id="origin"></p>
-                    <p id="boxoffice"></p>
-                    <p id="synopsis"></p>
-                </div>
-            </div>
-            <div class="nav">
-                <ul class="navbar">
-                    <li class="logo"><a>Logo</a></li>
-                    <li class="right"><a>Accueil</a></li>
-                    <li class="right"><a>Catégories</a></li>
-                </ul>
-            </div>
-            <h2>Meilleur film de tous les temps :</h2>
-            <div id="bestFilm" class="bestFilm"></div>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Just Stream It</title>
+</head>
 
-            <h2>Les autres meilleurs films :</h2>
-            <div id="carrousel1" class="carrousel carrousel_1">
-            </div>            
+<body>
+    <div class="container">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="title"></p>
+                <p><img id="modalImg" /></p>
+                <p id="genre"></p>
+                <p id="year"></p>
+                <p id="rated"></p>
+                <p id="imdbScore"></p>
+                <p id="directors"></p>
+                <p id="actors"></p>
+                <p id="duration"></p>
+                <p id="origin"></p>
+                <p id="boxoffice"></p>
+                <p id="synopsis"></p>
+            </div>
         </div>
-        
-        
-    </body>
-    <script src="script.js"></script>
-    <script src="modal.js"></script>
+        <div class="nav">
+            <ul class="navbar">
+                <li class="logo"><a>Logo</a></li>
+                <li class="right"><a>Accueil</a></li>
+                <li class="right"><a>Catégories</a></li>
+            </ul>
+        </div>
+        <h2>Meilleur film de tous les temps :</h2>
+        <div id="bestFilm" class="bestFilm"></div>
+
+        <h2>Les autres meilleurs films :</h2>
+        <div id="carrousel1" class="carrousel">
+        </div>
+
+        <h2 id="cat1">Les meilleurs </h2>
+        <div id="carrousel2" class="carrousel">
+        </div>
+
+        <h2 id="cat2">Les meilleurs</h2>
+        <div id="carrousel3" class="carrousel">
+        </div>
+
+        <h2 id="cat3">Les meilleurs</h2>
+        <div id="carrousel4" class="carrousel">
+        </div>
+    </div>
+
+
+</body>
+<script src="script.js"></script>
+<script src="modal.js"></script>
+
 </html>
