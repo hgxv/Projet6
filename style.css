@@ -16,6 +16,8 @@ a {
 
 h2 {
     text-align: center;
+    margin: 6rem 0 4rem;
+    display: none;
 }
 
 /* NAVBAR */
@@ -44,13 +46,12 @@ h2 {
 /* Meilleur film */
 .bestFilm {
     display: flex;
-    text-align: center;
     justify-content: center;
     margin: 3rem;
 }
 
 .bestFilm img {
-    width: 200px;
+    width: 100%;
 }
 
 /* Carrousel 1 */
