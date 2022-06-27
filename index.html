@@ -12,18 +12,26 @@
         <div id="modal" class="modal">
             <div class="modal-content">
                 <span class="close">&times;</span>
-                <p id="title"></p>
-                <p><img id="modalImg" /></p>
-                <p id="genres"></p>
-                <p id="year"></p>
-                <p id="rated"></p>
-                <p id="score"></p>
-                <p id="directors"></p>
-                <p id="actors"></p>
-                <p id="duration"></p>
-                <p id="origin"></p>
-                <p id="boxoffice"></p>
-                <p id="synopsis"></p>
+                <h3 id="title"></h3>
+                <div class="flex_modal">
+                    <div class="modal_img">
+                        <img id="modalImg" />
+                    </div>
+                    <div class="modal_info">
+                        <p>Date de sortie : <span id="year"></span></p>
+                        <p>Réalisation : <span id="directors"></span></p>
+                        <p>Acteurs : <span id="actors"></span></p>
+                        <p>Genres : <span id="genres"></span></p>
+                        <p>Rated : <span id="rated"></span></p>
+                        <p>Score IMDB : <span id="score"></span></p>
+                        <p>Durée : <span id="duration"></span>min</p>
+                        <p>Pays d'origine : <span id="origin"></span></p>
+                        <p>Résultat au box-office mondial : <span id="boxoffice"></span>$</p>
+                        <p>Description : <span id="synopsis"></span></p>                    
+                    </div>
+
+                </div>
+
             </div>
         </div>
         <div class="nav">

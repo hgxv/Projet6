@@ -27,11 +27,11 @@ function addModal() {
 
             for (let property in movie) {
                 if (property != "id" && property != "image_url" && property != "index") {
-                    document.getElementById(property).innerHTML = property + " : " + movie[property]
+                    document.getElementById(property).innerHTML = movie[property]
                 }
             }
 
-            modalImg.setAttribute("src", movie.image_url);
+            document.getElementById("modalImg").setAttribute("src", movie.image_url);
         })
     }
 }
