@@ -26,7 +26,12 @@ class Film {
         this.score = score;
         this.duration = duration;
         this.origin = origin;
-        this.boxoffice = boxoffice;
+        if (boxoffice == null) {
+            this.boxoffice = "Pas de résultat connu"
+        }
+        else {
+            this.boxoffice = Intl.NumberFormat('en-US').format(boxoffice) + "$"
+        }
         this.synopsis = description;
         this.index = index;
     }

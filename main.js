@@ -51,8 +51,8 @@ function affichage() {
     addFilm(starDiv, bestMovie);
 
     //Affiche les titres h2
-    let titles = document.getElementsByTagName("h2")
-    for (let i = 0; i < titles.c; i++) {
+    let titles = document.querySelectorAll("h2")
+    for (let i = 0; i < titles.length; i++) {
         titles[i].style.display = "block";
     }
 
@@ -134,6 +134,7 @@ function createSlide(container, id, url) {
     //Crée un objet image avec l'affiche du film
     let img = document.createElement("img");
     img.setAttribute("src", url)
+    img.setAttribute("alt", "Affiche du film")
 
     container.appendChild(div);
     div.appendChild(img);

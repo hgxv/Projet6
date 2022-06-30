@@ -120,7 +120,7 @@ button img {
 
 /* Modal Content */
 .modal-content {
-    background-color: whitesmoke;
+    background-color: #7d7575;
     margin: 8rem;
     color: black;
     border: 1px solid #888;
@@ -145,4 +145,31 @@ button img {
 #title {
     font-weight: bold;
     font-size: 28px;
+}
+
+.flex_modal {
+    display: flex;
+    align-content: center;
+    text-align: center;
+}
+
+.modal_img {
+    width: 30%;
+}
+.modal_info {
+    width: 80%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1080px) {
+    body {
+        font-size: 12px;
+    }
+    .flex_modal {
+        flex-direction: column;
+    }
+    .modal_img {
+        width: 100%;
+        align-content: center;
+    }
 }

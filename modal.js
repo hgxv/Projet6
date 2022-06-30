@@ -30,8 +30,9 @@ function addModal() {
                     document.getElementById(property).innerHTML = movie[property]
                 }
             }
-
-            document.getElementById("modalImg").setAttribute("src", movie.image_url);
+            let image = document.getElementById("modalImg")
+            image.setAttribute("src", movie.image_url)
+            image.setAttribute("alt", 'Affiche du film')
         })
     }
 }
