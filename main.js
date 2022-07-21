@@ -1,6 +1,7 @@
 let moviesDict = {};
 
 let nombreParCaroussel = 7
+let is_finished = 0
 let carrousel1 = document.getElementById("carrousel1")
 let carrousel2 = document.getElementById("carrousel2")
 let carrousel3 = document.getElementById("carrousel3")
@@ -30,8 +31,6 @@ window.addEventListener("load", function () {
     getFilms(categories[2], cat2, nombreParCaroussel);
     getFilms(categories[3], cat3, nombreParCaroussel);
 
-    //Timeout pour laisser le temps aux requêtes de se terminer
-    setTimeout(affichage, 1000);
 })
 
 
@@ -87,10 +86,10 @@ function getFilms(url, filmTab, nombreParCarrousel, nombreRequete = 0) {
             //Prépare la prochaine page si besoin
             nextUrl = request.next;
             for (i = 0; i < request.results.length; i++) {
-                if (nombreRequete >= nombreParCarrousel) { break; }
                 //Crée un objet Film
                 createFilm(request.results[i].url, nombreRequete, filmTab);
                 nombreRequete++;
+                if (nombreRequete >= nombreParCarrousel) { break; }
             }
             if (nombreRequete < nombreParCarrousel) {
                 //Si pas assez de requête à la fin de la page, charge la prochaine
@@ -177,6 +176,12 @@ function createFilm(filmUrl, requete, tab) {
             )
             //Ajoute l'objet Film au tableau dédié
             tab.push(film);
+            if (tab.length == 7) {
+                is_finished++
+            }
+            if (is_finished == 4) {
+                affichage()
+            }
 
             //Lie l'objet Film à son id, pour plus tard créer des slides
             moviesDict[movie.id] = film;
@@ -193,6 +198,7 @@ function triage(tab) {
      * 
      * @param {Array.<Object>} Film objet Film
      */
+
     tab.sort(function (a, b) {
         return a.index - b.index;
     })
