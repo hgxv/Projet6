@@ -1,5 +1,4 @@
 let moviesDict = {};
-
 let nombreParCaroussel = 7
 let is_finished = 0
 let carrousel1 = document.getElementById("carrousel1")
@@ -87,8 +86,11 @@ function getFilms(url, filmTab, nombreParCarrousel, nombreRequete = 0) {
             nextUrl = request.next;
             for (i = 0; i < request.results.length; i++) {
                 //Crée un objet Film
-                createFilm(request.results[i].url, nombreRequete, filmTab);
-                nombreRequete++;
+                if (request.results[i].votes >= 25000) {
+                    createFilm(request.results[i].url, nombreRequete, filmTab);
+                    nombreRequete++;
+                }
+
                 if (nombreRequete >= nombreParCarrousel) { break; }
             }
             if (nombreRequete < nombreParCarrousel) {

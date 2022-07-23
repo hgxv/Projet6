@@ -51,7 +51,9 @@ class Carrousel {
         let prevImg = document.createElement("img")
         let nextImg = document.createElement("img")
         prevImg.setAttribute("src", "media/moins.png")
+        prevImg.setAttribute("alt", "Bouton précédent")
         nextImg.setAttribute("src", "media/plus.png")
+        nextImg.setAttribute("alt", "Bouton suivant")
 
         prevButton.appendChild(prevImg)
         nextButton.appendChild(nextImg)
